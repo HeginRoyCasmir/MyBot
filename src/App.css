@@ -1,0 +1,178 @@
+.App{
+    /*width:50%;*/
+    margin: auto;
+    border: 1px solid rgb(226, 226, 226);
+    /*border-radius: 15px;*/
+    background-color: rgba(255, 255, 255, 0);
+    overflow: none;
+    position: relative;
+    height: 100vh;
+    
+}
+.headerTop {
+    height: 4%;
+}
+.App #result{
+    list-style-type: none;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    height: 72vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    overflow: none;
+    /* position: absolute; */
+    /* overflow: auto; */
+}
+.styleuser,.stylebot{
+    border-radius: 5px;
+    max-width: 50%;
+    display: inline;
+    font-size:20px;
+    font-family: 'Francois One', sans-serif;
+    color: black;
+}
+.styleuser{
+    background-color: #E3FFCA;
+    float: right;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.location{
+    font-size: 14px;
+    float: right;
+    margin-top: 6px;
+    margin-right: 1%;
+}
+.marker {
+    float: right;
+    font-size: 18px;
+    color: #E4392B;
+    margin-top: 5px;
+}
+.stylebot{
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #E8E8E8;    
+}
+.App input{
+    bottom:0px;
+}
+.input_bar {
+    margin-top: 5
+}
+.input-group {
+    bottom: 10px;
+}
+.headBot {
+    width: 33px;
+    float: left;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    margin-top: 7px;
+    margin-left: 4px;
+}
+#element{
+    
+    position: absolute;
+    overflow: auto;
+    max-height: 75vh;
+    bottom: 0px !important;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/* .headUser{
+    width: 33px;
+    float: right;
+    } */
+.App h2 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #5ACCBC;
+    margin-top: 0;
+    color: #ffffff;
+    height: 50px;
+    padding: 10px;
+    font-family: initial;
+}
+.botPad {
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 10px;
+    display: flow-root;
+}
+.userPad {
+    position: relative;
+    padding: 10px 0px 10px;
+    width: 100%;
+    display: flow-root;
+}
+.botImage{
+    width: 6%;
+}
+.userImage{
+    width: 2%;
+    float: right;
+}
+.user{
+    float: right;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.styleMap{
+    border-radius: 10px;
+    position: relative;
+}
+.styleVideo{
+    border-radius: 10px !important;
+    position: relative;
+}
+.styleBook{
+    width: 200px;
+    height: 200px;
+    background: grey;
+}
+
+            /*Media Query for Mobile*/
+@media only screen and  (max-width : 767px){ 
+    .App h2{
+        height: 12%;
+    }
+    .App #result {
+        list-style-type: none;
+        height: 73vh;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        overflow: none;
+        /* position: absolute; */
+        /* overflow: auto; */
+    }
+    .location{
+        font-size: 14px;
+        float: right;
+        margin-top: 1%;
+    }
+    .marker {
+        float: right;
+        font-size: 18px;
+        color: #E4392B;
+        
+    }
+    .headBot {
+        width: 33px;
+        float: left;
+        -webkit-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    .userImage {
+        width: 5%;
+        float: right;
+    }
+
+
+}

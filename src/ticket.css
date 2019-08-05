@@ -1,0 +1,24 @@
+.seatI{
+    display: inline-block;
+    width: 23px;
+    border: 1px solid rgb(175, 175, 175);
+    text-align: center;
+    margin: 7px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: rgb(175, 175, 175);
+}
+table{
+    width: 300px;
+}
+td{
+    border-bottom: none;
+}
+td:first-child{
+    background-color: grey;
+    color: white;
+    width: 10px;
+}
+.B2{
+    background-color: red;
+}
